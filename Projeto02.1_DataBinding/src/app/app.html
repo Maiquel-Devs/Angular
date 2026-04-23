@@ -1,0 +1,22 @@
+<main>
+  <h1>Projeto 02.1: Data Binding Final</h1>
+
+  <section>
+    <label>Digite algo:</label>
+
+    <!-- Data Binding -> Two-Way [()] -->
+    <input [(ngModel)]="nome" placeholder="Escreva seu nome...">
+
+    <!-- Interpolação {{ }} -->
+    <p>O valor do sinal agora é: <strong>{{ nome() }}</strong></p>
+  </section>
+
+  <hr>
+
+  <!-- Event Binding (click) -->
+  <button (click)="nome.set('João Silva')">Resetar Nome</button>
+</main>
+
+<!--
+  Graças ao [(ngModel)] a interpolação nome() está sempre atualizada
+-->
