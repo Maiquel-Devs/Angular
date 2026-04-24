@@ -1,17 +1,17 @@
 <main>
-  <h1>Projeto 02: Data Binding</h1>
+    <h1>Projeto 02: Data Binding</h1>
 
-  <p>O valor atual é: <strong>{{ contador() }}</strong></p> <!--Interpolação, variável contador exibi dados no html-->
+    <p>O valor atual é: <strong>{{ contador() }}</strong></p> <!--Interpolação, variável contador exibi dados no html-->
 
-  <button (click)="incrementar()">Aumentar</button>
-  <!--Event Binding, cada vez que o botão for clicado, a função incrementar será chamada-->
-  <button (click)="decrementar()">Diminuir</button>
-  <!--Event Binding, cada vez que o botão for clicado, a função decrementar será chamada-->
+    <button (click)="incrementar()">Aumentar</button>
+    <!--Event Binding, cada vez que o botão for clicado, a função incrementar será chamada-->
+    <button (click)="decrementar()">Diminuir</button>
+    <!--Event Binding, cada vez que o botão for clicado, a função decrementar será chamada-->
 
-  <hr>
+    <hr>
 
-  <button [disabled]="contador() < 1" (click)="contador.set(0)">Zerar Contador</button>
-  <!--Property Binding, o botão será desabilitado se o contador for menor que 1-->
+    <button [disabled]="contador() < 1" (click)="contador.set(0)">Zerar Contador</button>
+    <!--Property Binding, o botão será desabilitado se o contador for menor que 1-->
 </main>
 
 <!--

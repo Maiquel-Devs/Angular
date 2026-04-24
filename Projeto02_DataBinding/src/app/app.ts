@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';    // Importa o signal do Angular para criar sinais
 
 @Component({
   selector: 'app-root',
