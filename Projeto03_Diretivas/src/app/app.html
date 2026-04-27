@@ -1,0 +1,28 @@
+<button (click)="ligado.set(!ligado())">Interruptor</button>
+
+<hr>
+
+@if (ligado())  
+{
+  <p>💡 A lâmpada está ACESA!</p>
+}
+@else 
+{
+  <p>🌑 Tudo escuro...</p>
+}
+
+<hr>
+
+<ul>
+  @for (f of frutas(); track f) 
+  {
+  <li>{{ f }}</li>
+  }
+</ul>
+
+
+<!--Se for igual a true, "A lâmpada está ACESA!"-->
+
+<!--Se for igual a false, "Tudo escuro..."-->
+
+<!--falta explicar o for-->
