@@ -1,0 +1,25 @@
+<main style="padding: 20px;">
+  <h1>Projeto 04: Comunicação entre Componentes</h1>
+  <p>Nome no Pai: {{ usuarioNome() }}</p>
+
+  <hr>
+  <!--Essa tag demostra a comunicação entre o componente pai e filho-->
+  <app-filho 
+    [nomeRecebido]="usuarioNome()" 
+    (notificarReset)="limparNome()">
+  </app-filho>
+</main>
+
+<!--
+nomeRecebido e nomeRecebido  são atributos ou variáveis vinda graças a importação vinda do app.ts (componente pai)
+
+[propriedadeBinding]="valor"
+(eventoBinding)="funcao()"
+
+<app-filho> </app-filho>  para fazer essa comunicação entre o componete pai e filho
+
+<app-filho>  </app-filho>  ele faz a instanciação do componentte e isola a aplicação dentro dele, garantindo 
+que ele não interfira no resto do código, pois cada um terá seu proprio escopo 
+
+app-filho>  </app-filho> ou seja , onde há isso significa que está havendo uma comunicação entre o componente pai e filho
+-->
