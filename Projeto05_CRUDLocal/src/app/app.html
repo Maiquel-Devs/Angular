@@ -1,0 +1,22 @@
+<main style="padding: 20px;">
+  <h1>Gerenciador de Estoque (Local)</h1>
+
+  <input #inputProduto type="text" placeholder="Nome do produto">
+  <button (click)="adicionar(inputProduto.value); inputProduto.value=''">Adicionar</button>
+
+  <hr>
+
+  <ul>
+    @for (item of listaProdutos(); track item) 
+    {
+      <li>
+        {{ item }} 
+        <button (click)="remover(item)">🗑️ Remover</button>
+      </li>
+    }
+    @empty 
+    {
+      <p>Estoque vazio!</p>
+    }
+  </ul>
+</main>
