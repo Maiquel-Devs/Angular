@@ -13,13 +13,13 @@ export class App {
   adicionar(novo : string) {
     if(novo) {
       // Adiciona o novo item no final da lista
-      this.listaProdutos.update(atual => [...atual, novo]);
+      this.listaProdutos.update(atual => [...atual, novo]); // Pega todos os itens da lista + o intem novo e cria uma nova lista
     }
   }
 
   remover(itemNome : string) {
     // Remove o item da lista
-    this.listaProdutos.update(atual => atual.filter(p => p !== itemNome));
+    this.listaProdutos.update(atual => atual.filter(p => p !== itemNome));  // Pega todos os intens que tem nome diferente do excluido e forma uma nova lista
   }
 
 }
