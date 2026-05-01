@@ -1,0 +1,14 @@
+/* CSS Global */
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+  font-family: sans-serif;
+}
+.form-group { margin-bottom: 1rem; }
+input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; }
+.btn-salvar { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+.btn-salvar:hover { background: #0056b3; }

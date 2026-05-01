@@ -1,0 +1,24 @@
+<nav style="padding: 20px; background: #f4f4f4; border-bottom: 1px solid #ccc;">
+  <!-- Links com as rotas definidas em app.routes.ts -->
+  <a routerLink="/home" style="margin-right: 15px;">Início</a>
+  <a routerLink="/cadastro">Cadastro de Produtos</a>
+</nav>
+
+<main style="padding: 20px;">
+  <!-- O "Portal" onde os componentes das rotas serão injetados -->
+  <router-outlet></router-outlet>
+</main>
+
+<!--
+Pontos Importantes nesse Arquivo: 
+
+1. <nav></nav> é a barra de navegação do psite, onde vai ficar disponivel em todas as páginas
+
+2. <router-outlet></router-outlet> é o local onde o componente da rota será injetado, ou seja é onde será a saída da rota
+
+ou seja, a barra de navegação permanece intacta e conteudo <main></main> muda conforme a rota, ou seja 
+é o que será trocado "Mutável".
+
+Resumo: <nav></nav> "Não Mutável", permanece igual em todas as páginas.
+        <main></main> "Mutável", por causa do <router-outlet></router-outlet> que é onde há saida de rotas.
+-->
