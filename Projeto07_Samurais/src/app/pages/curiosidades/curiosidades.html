@@ -1,0 +1,24 @@
+<div class="card">
+  <h1>🏮 {{ tituloPagina }}</h1>
+  <p class="subtitle">Mitos, verdades e o gerenciamento de fatos históricos da cultura japonesa.</p>
+  
+  <hr>
+
+  <ul class="lista-fatos">
+    @for (fato of fatos(); track fato) {
+      <li class="item-fato">
+        <span class="texto-fato">📌 {{ fato }}</span>
+        <button class="btn-deletar" (click)="removerFato(fato)" title="Excluir item">❌</button>
+      </li>
+    } @empty {
+      <p class="aviso-vazio">Nenhum fato registrado. O estoque de conhecimento está vazio!</p>
+    }
+  </ul>
+
+  <div class="input-container">
+    <input #novaCuriosidade type="text" placeholder="Digite uma nova curiosidade...">
+    <button class="btn-adicionar" (click)="adicionarFato(novaCuriosidade.value); novaCuriosidade.value = ''">
+      Adicionar
+    </button>
+  </div>
+</div>

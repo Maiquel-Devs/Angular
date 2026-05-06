@@ -1,0 +1,14 @@
+/* Customizações focadas no bloco de texto histórico */
+.conteudo-historico p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto-medio);
+  text-align: justify;
+}
+
+.conteudo-historico strong {
+  color: var(--cor-pure-white);
+  border-bottom: 1px dashed var(--cor-primaria);
+  padding-bottom: 2px;
+}

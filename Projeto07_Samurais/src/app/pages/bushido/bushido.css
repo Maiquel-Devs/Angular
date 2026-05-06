@@ -1,0 +1,51 @@
+.introducao {
+  color: var(--cor-texto-medio);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Layout dos botões em linha/grid */
+.botoes-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+/* Botão estilizado com a cor padrão do tema */
+.botoes-grid button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-pure-white);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.botoes-grid button:hover {
+  background-color: var(--cor-primaria-hover);
+  transform: translateY(-2px);
+}
+
+.botoes-grid button:active {
+  transform: translateY(0);
+}
+
+/* Caixa de destaque amarela para simular a meditação */
+.caixa-meditacao {
+  background-color: var(--bg-navbar);
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 4px solid #ffcc00;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.caixa-meditacao p {
+  margin: 0;
+  color: var(--cor-texto-claro);
+  font-size: 1.05rem;
+}

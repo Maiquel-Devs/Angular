@@ -1,0 +1,27 @@
+<div class="card">
+  <h1>⚔️ {{ tituloPagina }}</h1>
+  <p class="subtitle">O "Caminho do Guerreiro", a filosofia que guiava a espada e a mente.</p>
+  
+  <hr>
+
+  <p class="introducao">
+    O Bushido era um código de conduta rígido que exigia honra absoluta do samurai. 
+    Selecione um dos pilares fundamentais para ver seu significado:
+  </p>
+
+  <div class="botoes-grid">
+    <button (click)="selecionarPrincipio('GI', 'Justiça e Retidão. Fazer o que é certo sem hesitar.')">
+      Gi (Justiça)
+    </button>
+    <button (click)="selecionarPrincipio('REI', 'Respeito e Cortesia. Polidez mesmo com os inimigos.')">
+      Rei (Respeito)
+    </button>
+    <button (click)="selecionarPrincipio('YU', 'Coragem Heroica. Substituir o medo pelo respeito próprio.')">
+      Yu (Coragem)
+    </button>
+  </div>
+
+  <div class="caixa-meditacao">
+    <p><em>{{ principioAtivo() }}</em></p>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+.lista-fatos {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+/* Layout de cada linha com flexbox para alinhar texto e botão de exclusão */
+.item-fato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-navbar);
+  padding: 12px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--cor-primaria);
+  transition: transform 0.2s;
+}
+
+.item-fato:hover {
+  transform: translateX(4px);
+}
+
+.texto-fato {
+  color: var(--cor-texto-medio);
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-right: 10px;
+}
+
+/* Botão menor e transparente para a lixeira */
+.btn-deletar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-deletar:hover {
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+/* Container do input e botão de adicionar */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  flex: 1;
+  background-color: #333333;
+  color: var(--cor-pure-white);
+  border: 1px solid var(--cor-borda-separador);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+}
+
+.btn-adicionar {
+  background-color: var(--cor-primaria);
+  color: var(--cor-pure-white);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-adicionar:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.aviso-vazio {
+  color: var(--cor-texto-escuro);
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
